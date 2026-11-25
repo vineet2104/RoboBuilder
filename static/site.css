@@ -50,3 +50,7 @@ pre{background:#edf3e5;border:1px solid #d1e0bf;border-radius:3px;padding:20px;f
 @media(max-width:800px){main{width:calc(100% - 38px)}.hero{padding:45px 0 38px}.wide-break{display:none}.authors{font-size:14px;gap:2px 14px}}
 @media(max-width:600px){body{font-size:14px}main{width:calc(100% - 30px)}h1{font-size:29px;letter-spacing:-.8px}h2{font-size:24px}.hero{padding:36px 0}.authors{font-size:13px;gap:2px 12px}.affiliations{font-size:13px}.resource{font-size:12px;padding:9px 14px}section{margin-bottom:43px}.prose p{text-align:left}.demo-group{display:block}.group-title{display:block;margin:8px 0 5px}.player-heading{flex-wrap:wrap}.player-heading h3{font-size:16px}figcaption,.result-caption{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.comparison-film{margin:0}
+.comparison-caption{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 24px;font-size:.875rem}
+.comparison-caption a{white-space:nowrap}

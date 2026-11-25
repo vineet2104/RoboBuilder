@@ -2,6 +2,12 @@
    No third-party embeds, polling, or source reassignment on an already-loaded clip. */
 (() => {
   'use strict';
+  // Keep the overview film and rollout demos from playing simultaneously.
+  document.addEventListener('play',event=>{
+    const active=event.target;
+    if(!(active instanceof HTMLVideoElement))return;
+    document.querySelectorAll('video').forEach(video=>{if(video!==active)video.pause();});
+  },true);
   const demos=window.ROBOBUILDER_DEMOS;
   if (!demos?.length) return;
   const stage=document.getElementById('demo-stage'), buttons=[...document.querySelectorAll('[data-demo]')];
